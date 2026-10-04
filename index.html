@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>I Am Sorry ❤️</title>
+
+    <!-- Calligraphy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            overflow: hidden;
+
+            background: linear-gradient(
+                135deg,
+                #fff5f7,
+                #ffffff,
+                #fff0f3
+            );
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .sorry {
+            font-family: "Dancing Script", cursive;
+            font-size: clamp(55px, 16vw, 110px);
+            font-weight: 600;
+
+            color: #4a1f2d;
+
+            text-shadow:
+                0 3px 8px rgba(0, 0, 0, 0.15);
+
+            opacity: 0;
+
+            transform: translateY(30px) scale(0.7);
+
+            animation:
+                appear 2s ease-out forwards,
+                gentle 3s ease-in-out 2s infinite;
+        }
+
+        .heart {
+            display: block;
+
+            font-size: clamp(25px, 7vw, 45px);
+
+            margin-top: 5px;
+
+            opacity: 0;
+
+            animation: heartAppear 2s ease-out 1.5s forwards;
+        }
+
+        @keyframes appear {
+
+            0% {
+                opacity: 0;
+                transform: translate
